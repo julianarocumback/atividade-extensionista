@@ -26,7 +26,7 @@ footer {
 }
 
 
-a {
+.fa-solid, a {
     text-decoration: none;
     color:aliceblue; 
 }
@@ -35,7 +35,9 @@ a:hover{
     color:#c84bb3;
 }
 
-
+.fa-solid:hover{
+    color: #c84bb3;
+}
 
 
 .jogo{
