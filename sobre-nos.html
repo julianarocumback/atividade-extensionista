@@ -52,31 +52,38 @@
   </header>
 
   <!----- Conteúdo ----->
-  <main>
-      <div class="container">
-          <div class="row">
-              <div id="conteudo">
-                    <div class="col-5 jogo">
-                        Jogo 1
-                    </div>
-                    <div class="col-5 jogo">
-                        Jogo 2
-                    </div>
-                    <div class="w-100"></div>
-                    <div class="col-5 jogo">
-                        Jogo 3
-                    </div>
-                    <div class="col-5 jogo">
-                        Jogo 4
-                    </div>
-              </div>
+  <main class="position-absolute top-50 start-50">
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">List group item heading</h5>
+            <small>3 days ago</small>
           </div>
+          <p class="mb-1">Some placeholder content in a paragraph.</p>
+          <small>And some small print.</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">List group item heading</h5>
+            <small class="text-body-secondary">3 days ago</small>
+          </div>
+          <p class="mb-1">Some placeholder content in a paragraph.</p>
+          <small class="text-body-secondary">And some muted small print.</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">List group item heading</h5>
+            <small class="text-body-secondary">3 days ago</small>
+          </div>
+          <p class="mb-1">Some placeholder content in a paragraph.</p>
+          <small class="text-body-secondary">And some muted small print.</small>
+        </a>
       </div>
   </main>
     
   <!----- Footer ----->
-  <footer>
-    <div class="container-fluid pt-3 text-center text-left text-white d-flex justify-content-center fw-medium align-middle">
+  <footer class="fixed-bottom">
+    <div class=" container-fluid pt-3 text-center text-left text-white d-flex justify-content-center fw-medium align-middle">
       <div class="row">
         <div class="col footer-links">
           <ul class="list-group list-unstyled ">
