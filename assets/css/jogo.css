@@ -1,0 +1,10 @@
+h1 {
+    color: red;
+}
+
+canvas {
+    background-color: antiquewhite;
+    width: 500px;
+    height: 300px;
+    border-color: aquamarine;
+}
