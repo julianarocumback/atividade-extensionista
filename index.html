@@ -3,23 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jogos educacionais para crianças">
     <title>Projeto</title>
+    
+    <!-- Externo -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
 <body>
-    <a href="/">Principal</a><br>
-    <a href="quem-somos.html">Quem somos</a><br>
-    <a href="sobre.html">Sobre</a><br>
-    <br>
-    <a href="assets/jogos/jogo1/jogo1.html">jogo1</a><br>
-    <a href="assets/jogos/jogo2/jogo2.html">jogo2</a><br>
-    <a href="assets/jogos/jogo3/jogo3.html">jogo3</a><br>
-    <br>
-    <a href="assets/jogos/jogo4/jogo4.html">jogo4</a><br>
-    <a href="assets/jogos/jogo5/jogo5.html">jogo5</a><br>
-    <a href="assets/jogos/jogo6/jogo6.html">jogo6</a><br>
+    <!-- Cabeçalho -->
+    <header class="header container">
+        <a href="/">Logo</a>
+        <nav class="nav">
+            <ul class="menu">
+                <li class="item"><a href="/">Início</a></li>
+                <li class="item"><a href="sobre.html">Sobre</a></li>
+                <li class="item"><a href="quem-somos.html">Quem somos</a></li>
+                <hr>
+                <li class="item"><a target="_blank" href="/">Formulário</a></li>
+            </ul>
+            <i class="uil uil-bars"></i>
+        </nav>
+    </header>
 
+    <!-- Conteúdo -->
+    <main class="main container">
+        <section class="banner">
+            <img src="assets/img/capa.webp" alt="banner" class="banner__img">
+        </section>
+
+        <section class="filtro">
+            <input type="text" name="" id="" class="pesquisa">
+            <div class="opcoes">
+                <button>Tudo</button>
+                <button>Matemática</button>
+                <button>Português</button>
+            </div>
+            <i class="uil uil-filter opcoes-mobile"></i>
+        </section>
+
+        <section class="jogos">
+            <a class="capa" href="assets/jogos/jogo1/jogo1.html"><img class="capa" src="assets/img/capa.webp" alt=""></a><br>
+            <a href="assets/jogos/jogo2/jogo2.html">jogo2</a><br>
+            <a href="assets/jogos/jogo3/jogo3.html">jogo3</a><br>
+            <br>
+            <a href="assets/jogos/jogo4/jogo4.html">jogo4</a><br>
+            <a href="assets/jogos/jogo5/jogo5.html">jogo5</a><br>
+            <a href="assets/jogos/jogo6/jogo6.html">jogo6</a><br>
+        </section>
+    </main>
     
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>Todos os direitos reservados</p>
+    </footer>
+    
+    <!-- JavaScript -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>

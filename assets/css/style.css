@@ -1,3 +1,77 @@
+/*---------- Variáveis ----------*/
+:root {
+    --cor-primaria: red; 
+}
+
+/*---------- Reset ----------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.header {
+    display: flex;
+    background-color: red;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.menu {
+    display: none;
+    list-style: none;
+    gap: 10px;
+}
+
+.main {
+    height: max-content;
+}
+
+.banner {
+    margin-bottom: 20px;
+}
+
+.banner__img {
+    width: 100%;
+    margin: 0;
+}
+
+.filtro  {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.pesquisa {
+    width: 100%;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+.opcoes {
+    display: none;
+}
+
+.capa{
+    width: 500px;
+}
+
+
+
+
+
 canvas {
     background-color: antiquewhite;
     width: 500px;
@@ -8,3 +82,66 @@ canvas {
 body {
     background-color: aqua;
 }
+
+
+
+
+.footer {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: red;
+    position: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile */
+@media (min-width: 475px) {
+
+    .container {
+        max-width: 475px;
+    }
+
+    .header {
+        background-color: green;
+        display: flex;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
