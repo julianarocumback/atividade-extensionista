@@ -14,17 +14,27 @@
 <body>
     <!-- Cabeçalho -->
     <header class="header container">
-        <a href="/">Projeto</a>
-        <nav class="nav">
-            <ul class="menu">
-                <li class="item"><a href="/">Início</a></li>
-                <li class="item"><a href="sobre.html">Sobre</a></li>
-                <li class="item"><a href="quem-somos.html">Quem somos</a></li>
-                <hr>
+        <div class="header__logo">
+            <a href="/">Projeto</a>
+        </div>
+        <nav class="header__nav" id="header-nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="/">Início</a></li>
+                <li class="header__nav-item"><a href="sobre.html">Sobre</a></li>
+                <li class="header__nav-item"><a href="quem-somos.html">Quem somos</a></li>
+                <hr class="header__nav-divisor">
                 <li class="item"><a target="_blank" href="/">Formulário</a></li>
             </ul>
-            <i class="uil uil-bars"></i>
+            <!-- Botão para fechar o menu -->
+            <div class="header__nav--close" id="nav-close">
+                <i class="uil uil-multiply"></i>
+            </div>         
         </nav>
+
+        <!-- Botão para abrir o menu -->
+        <div class="header__nav--open" id="nav-open">
+            <i class="uil uil-bars barra"></i>
+        </div>
     </header>
 
     <!-- Conteúdo -->
@@ -47,7 +57,7 @@
                 <i class="uil uil-filter"></i>
             </div>
         </section>
-        <hr>
+        <hr class="jogos-divisor">
 
         <!-- Jogos -->
         <section class="jogos">
@@ -59,14 +69,17 @@
             <a href="assets/jogos/jogo6/jogo6.html"><img class="jogo" src="assets/img/jogo6.png" alt=""></a>
             <a href="assets/jogos/jogo7/jogo7.html"><img class="jogo" src="assets/img/jogo7.png" alt=""></a>
             <a href="assets/jogos/jogo8/jogo8.html"><img class="jogo" src="assets/img/jogo8.png" alt=""></a>
+            <a href="assets/jogos/jogo8/jogo8.html"><img class="jogo" src="assets/img/jogo8.png" alt=""></a>
+            <a href="assets/jogos/jogo8/jogo8.html"><img class="jogo" src="assets/img/jogo8.png" alt=""></a>
+            <a href="assets/jogos/jogo8/jogo8.html"><img class="jogo" src="assets/img/jogo8.png" alt=""></a>
             <!-- <a href="assets/jogos/jogo8/jogo6.html"><img class="jogo" src="assets/img/jogo9.png" alt=""></a> -->
         </section>
     </main>
     
     <!-- Rodapé -->
     <footer class="footer container">
-        <p>Todos os direitos reservados</p>
-    </footer>
+        <p>&copy Todos os direitos reservados</p>
+    </footer> 
     
     <!-- JavaScript -->
     <script src="assets/js/script.js"></script>
