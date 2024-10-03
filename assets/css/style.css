@@ -217,13 +217,11 @@ h1, h2, h3, h4 {
     }
 
     .header {
-        background-color: rgb(110, 204, 32);
+    
     }
 
     .header__nav {
-        /* position: fixed; */
-        display: none;
-        background-color: red;
+  
     }
     
 } 
