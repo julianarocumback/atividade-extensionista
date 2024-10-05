@@ -1,4 +1,4 @@
-// Mostrar menu
+// MOSTRAR MENU
 
 const headerNav = document.getElementById('header-nav'),
       navOpen = document.getElementById('nav-open'),
@@ -12,7 +12,6 @@ if(navOpen){
     })
 }
 
-
 // Fechar menu
 
 if(navClose){
@@ -20,3 +19,12 @@ if(navClose){
         headerNav.classList.remove('show-menu')
     })
 }
+
+
+
+// BANNER
+
+
+
+
+// FILTRO
