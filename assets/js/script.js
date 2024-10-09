@@ -28,3 +28,26 @@ if(navClose){
 
 
 // FILTRO
+
+const filtro = document.getElementById('filtro'),
+      categoria = document.getElementById('categoria')
+      
+
+// Abrir categoria
+
+if(filtro){
+    filtro.addEventListener('click', () => {
+        categoria.classList.add('mostrar-categoria') 
+    })
+
+
+}
+
+// Fechar categoria
+
+// if(filtro){
+//     filtro.addEventListener('', () => {
+//         categoria.classList.remove('mostrar-categoria')
+//     })
+// }
+

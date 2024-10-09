@@ -151,28 +151,37 @@ h1, h2, h3, h4 {
 }
 
 /* filtro */
-.filtro  {
+.pesquisa  {
     width: 100%;
     display: flex;
-    
+    flex-direction: column;
+    /* border: 1px solid; */
     padding: 0px 16px 0px 16px;
     margin-bottom: 12px;
     gap: 10px;
     /* border: solid; */
 }
 
-.pesquisa {
+.area__pesquisa {
+    display: flex;
+    gap: 10px;
+}
+
+.caixa__pesquisa {
     width: 100%;
     height: 30px;
     border-radius: 10px;
     background-color: aliceblue;
+    padding-left: 30px;
 }
 
-.opcoes {
-    display: none;
+.botao-pesquisa {
+    position: absolute;
+    top: px;
+    /* left: -375px; */
 }
 
-.opcoes-mobile {
+.filtro {
     height: 30px;
     width: 30px;
     background-color: rgb(167, 163, 172);
@@ -180,6 +189,16 @@ h1, h2, h3, h4 {
     border: 1px solid red;
     align-content: center;
     text-align: center;
+    cursor: pointer;
+}
+
+.categoria {
+
+    display: none;
+}
+
+.mostrar-categoria {
+    display: block;
 }
 
 
