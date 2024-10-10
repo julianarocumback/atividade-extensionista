@@ -83,9 +83,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 15px;
 }
 
-/* ---------- CONTEÚDO ---------- */
+/* ========== PÁGINA PRINCIPAL ========== */
 
-/* ---------- Cabeçalho ---------- */
+/*---------- Cabeçalho ----------*/
 .header {
     position: fixed;
     top: 0;
@@ -160,10 +160,8 @@ h1, h2, h3, h4, h5, h6 {
     visibility: visible;
 }
 
-/* ---------- principal ---------- */
 
-
-/* -------- banner --------- */
+/*---------- banner ----------*/
 .main__banner {
     margin-bottom: 45px;
     background-color: rgb(255, 255, 255);
@@ -339,7 +337,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* PÁGINA DOS JOGOS */
+/*========== PÁGINA DO JOGO ==========*/
 .pagina__jogo {
     padding: 16px;
 }
@@ -380,7 +378,7 @@ li {
 
 
 
-/* MOBILE - PEQUENO */
+/*========== MOBILE - PEQUENO ==========*/
 @media (min-width: 475px) {
 
     .container {
@@ -398,7 +396,7 @@ li {
     
 } 
 
-/* MOBILE - MÉDIO */
+/*========== MOBILE - MÉDIO ==========*/
 @media (min-width: 640px) {
 
     .container {
@@ -407,7 +405,7 @@ li {
 }
 
 
-/* MOBILE - GRANDE */
+/*========== MOBILE - GRANDE ==========*/
 @media (min-width: 768px ) {
 
     .container {
@@ -415,7 +413,7 @@ li {
     }
 }
 
-/* TABLET */
+/*========== TABLET ==========*/
 @media (min-width: 1024px ) {
 
     .container {
@@ -423,7 +421,7 @@ li {
     }
 }
 
-/* DESKTOP - PEQUENO */
+/*========== DESKTOP - PEQUENO ==========*/
 @media (min-width: 1280px) {
     .container {
         max-width: 1280px;
@@ -431,7 +429,7 @@ li {
 }
 
 
-/* DESKTOP - MÉDIO */
+/*========== DESKTOP - MÉDIO ==========*/
 @media (min-width:1536px) {
 
     .container {
@@ -439,7 +437,7 @@ li {
     }
 }
 
-/* DESKTOP - MÉDIO */
+/*========== DESKTOP - GRANDE ==========*/
 @media (min-width:1820px) {
 
     .container {
