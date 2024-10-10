@@ -434,7 +434,7 @@ li {
 @media (min-width: 475px) {
 
     .container {
-       max-width: 475px;
+       max-width: 100%;
 
     }
 
