@@ -490,7 +490,7 @@ li {
     .main__games-cover {
         position: relative;
         width: 200px;
-        height: 130px;
+        height: 100%;
     }
 
     .main__games-name {
@@ -504,6 +504,18 @@ li {
     .container {
         max-width: 1024px;
     }
+
+
+    /* ---------- jogos ---------- */
+    .main__games-cover {
+        position: relative;
+        width: 300px;
+        height: 170px;
+    }
+
+    .main__games-name {
+        left: 100px;
+    }
 }
 
 /*========== DESKTOP - PEQUENO ==========*/
@@ -511,6 +523,19 @@ li {
     .container {
         max-width: 1280px;
     }
+
+    /* ---------- jogos ---------- */
+    .main__games-cover {
+        position: relative;
+        width: 380px;
+        height: 220px;
+    }
+
+    .main__games-name {
+        left: 100px;
+    }
+
+
 }
 
 
@@ -520,6 +545,17 @@ li {
     .container {
         max-width: 1536px;
     }
+
+        /* ---------- jogos ---------- */
+        .main__games-cover {
+            position: relative;
+            width: 450px;
+            height: 270px;
+        }
+    
+        .main__games-name {
+            left: 170px;
+        }
 }
 
 /*========== DESKTOP - GRANDE ==========*/
@@ -528,4 +564,15 @@ li {
     .container {
         max-width: 100%;
     }
+
+        /* ---------- jogos ---------- */
+        .main__games-cover {
+            position: relative;
+            width: 400px;
+            height: 250px;
+        }
+    
+        .main__games-name {
+            left: 150px;
+        }
 }
