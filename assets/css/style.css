@@ -446,11 +446,15 @@ li {
   
     }
 
-
+    /* ---------- jogos ---------- */
     .main__games-cover {
         position: relative;
         width: 150px;
         height: 100%;
+    }
+
+    .main__games-name {
+        left: 14px;
     }
     
 } 
@@ -461,6 +465,17 @@ li {
     .container {
         max-width: 640px;
     }
+
+        /* ---------- jogos ---------- */
+        .main__games-cover {
+            position: relative;
+            width: 170px;
+            height: 100%;
+        }
+    
+        .main__games-name {
+            left: 25px;
+        }
 }
 
 
@@ -469,6 +484,17 @@ li {
 
     .container {
         max-width: 768px;
+    }
+
+    /* ---------- jogos ---------- */
+    .main__games-cover {
+        position: relative;
+        width: 200px;
+        height: 130px;
+    }
+
+    .main__games-name {
+        left: 40px;
     }
 }
 
