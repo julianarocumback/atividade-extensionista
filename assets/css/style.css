@@ -64,8 +64,6 @@ body {
     width: 100%;
     margin-left: 0px;
     margin-right: 0px;
-    /* tirar a borda depois */
-    border: solid ;
 }
 
 .main {
@@ -504,6 +502,54 @@ li {
     .container {
         max-width: 1024px;
     }
+
+    .header__nav{
+    
+        position: static;
+        width: auto;
+
+        display: flex;
+        align-items: center;
+        padding: 0;
+
+    }
+    
+    .header__nav-button--open,
+    .header__nav-button--close {
+        display: none;
+    }
+    
+    .header__nav-list {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 20px;
+        visibility: visible;
+    }
+    
+    .header__nav-divisor {
+        position: relative;
+        border-color: rgba(0, 0, 0, 0.315);
+        width: 0px;
+        top: 0px;
+    }
+    
+    .header__nav-item {
+        /* a */
+    }
+    
+    .header__nav-button--close {
+        display: none;
+    }
+    
+    .show-menu {
+        display: none;
+    }
+
+
+
+
+
 
 
     /* ---------- jogos ---------- */
