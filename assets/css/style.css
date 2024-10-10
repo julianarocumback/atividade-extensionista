@@ -431,7 +431,7 @@ li {
 
 
 /*========== MOBILE - PEQUENO ==========*/
-@media (min-width: 474px) {
+@media (min-width: 475px) {
 
     .container {
        max-width: 100%;
@@ -444,6 +444,13 @@ li {
 
     .header__nav {
   
+    }
+
+
+    .main__games-cover {
+        position: relative;
+        width: 150px;
+        height: 100%;
     }
     
 } 
