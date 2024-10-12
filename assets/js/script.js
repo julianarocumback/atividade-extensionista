@@ -39,14 +39,12 @@ if(filtro){
     filtro.addEventListener('click', () => {
         categoria.classList.add('mostrar-categoria') 
     })
-
-
 }
 
 // Fechar categoria
 
 // if(filtro){
-//     filtro.addEventListener('', () => {
+//     filtro.addEventListener('click', () => {
 //         categoria.classList.remove('mostrar-categoria')
 //     })
 // }

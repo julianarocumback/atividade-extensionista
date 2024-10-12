@@ -445,6 +445,11 @@ li {
   
     }
 
+    /* Banner */
+    .main__banner-img{
+        width: 100%;
+    }
+
     /* ---------- jogos ---------- */
     .main__games-cover {
         position: relative;
@@ -462,19 +467,22 @@ li {
 @media (min-width: 640px) {
 
     .container {
-        max-width: 640px;
+        max-width: 100%;
     }
 
-        /* ---------- jogos ---------- */
-        .main__games-cover {
-            position: relative;
-            width: 170px;
-            height: 100%;
-        }
     
-        .main__games-name {
-            left: 25px;
-        }
+
+
+    /* ---------- jogos ---------- */
+    .main__games-cover {
+        position: relative;
+        width: 170px;
+        height: 100%;
+    }
+
+    .main__games-name {
+        left: 25px;
+    }
 }
 
 
@@ -482,7 +490,7 @@ li {
 @media (min-width: 768px ) {
 
     .container {
-        max-width: 768px;
+        max-width: 100%;
     }
 
     /* ---------- jogos ---------- */
@@ -501,7 +509,7 @@ li {
 @media (min-width: 1024px ) {
 
     .container {
-        max-width: 1024px;
+        max-width: 100%;
     }
 
     .header__nav{
@@ -568,7 +576,7 @@ li {
 /*========== DESKTOP - PEQUENO ==========*/
 @media (min-width: 1280px) {
     .container {
-        max-width: 1280px;
+        max-width: 100%;
     }
 
     /* ---------- jogos ---------- */
@@ -590,7 +598,7 @@ li {
 @media (min-width:1536px) {
 
     .container {
-        max-width: 1536px;
+        max-width: 100%;
     }
 
         /* ---------- jogos ---------- */
