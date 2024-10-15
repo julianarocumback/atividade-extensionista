@@ -20,7 +20,7 @@
     --body-font-large:;
     --body-font-xlarge:;
 
-    --h1-font-size:;
+    --h1-font-size: 2rem;
     --h2-font-size:;
     --h3-font-size:;
     --h4-font-size:;
@@ -82,6 +82,10 @@ canvas {
 h1, h2, h3, h4, h5, h6 {
     color: brown;
     margin-bottom: 15px;
+}
+
+.titulo {
+    font-size: var(--h1-font-size);
 }
 
 /* ========== PÁGINA PRINCIPAL ========== */
@@ -189,11 +193,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /*---------- pesquisa ----------*/
 .pesquisa  {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
     /* border: 1px solid; */
-    padding: 0px 16px 0px 16px;
+    /* padding: 0px 16px 0px 16px; */
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
     margin-bottom: 12px;
     margin-top: 45px;
     gap: 10px;
