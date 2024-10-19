@@ -202,8 +202,10 @@ a {
     flex-direction: column;
     /* border: 1px solid; */
     /* padding: 0px 16px 0px 16px; */
-    margin-left: 1.3rem;
-    margin-right: 1.3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin-bottom: 12px;
     margin-top: 45px;
     gap: 10px;
@@ -261,27 +263,19 @@ a {
 
 .main__games {
     display: flex;
-    /* justify-content: space-around; */
-    
     flex-wrap: wrap;
-    
-    padding: 0px 16px 0px 16px;
-    /* row-gap: 30px; */
-    gap: 30px;
-    justify-content: center;
-    margin-bottom: 20px;
-    flex-shrink: 1;
-
+    margin: 0rem 1rem 2rem 1rem;
+    padding: 0px 1rem 0px 1rem;
+    gap: 10px;
 }
 
 .main__games-cover {
-    position: relative;
-    width: 170px;
-    height: 100%;
-    border-radius: 20px;
+    width: calc(100%/3 - 2rem);
+    flex-grow: 1;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    
 
 }
 
@@ -290,13 +284,13 @@ a {
     bottom: 0px;
     position: absolute;
     width: 100%;
-
     height: 50px;
 }
 
 .main__games-img {
     box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25) inset;
     width: 100%;
+    height: 100%;
 }
 
 
@@ -304,36 +298,19 @@ a {
     color: white;
     position: absolute;
     left: 23px;
-    bottom: 10%;
+    bottom: 40px;
    
 }
 
-/* 
-.main__games-cover {
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 65%, #000 100%);
-    
-     sombra do lado de fora 
-    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    border-radius: 20px;
 
-
-
-*/
-
-    
-   
-    /* url(<path-to-image>) lightgray 50% / cover no-repeat */
 
 
  /* ---------- rodapé ---------- */
 
 .footer {
-    position: relative;
+    position: absolute;
     width: 100%;
-    height: 50px;
+    height: 3.5rem;
     left: 0;
     bottom: 0;
 
@@ -482,9 +459,7 @@ li {
 
     /* ---------- jogos ---------- */
     .main__games-cover {
-        position: relative;
-        width: 150px;
-        height: 100%;
+
     }
 
     .main__games-name {
