@@ -346,15 +346,6 @@ a {
 
 .ods-img {
     width: calc((100% / 3) - 0.35rem);
-    filter: grayscale(100%);
-    /* flex-grow: 1; */
-    /* width: 33%; */
-
-}
-
-
-.escolha {
-    filter: none;
 }
 
 /* ========== QUEM SOMOS ========== */
