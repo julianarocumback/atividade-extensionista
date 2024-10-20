@@ -341,7 +341,6 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    /* width: 100% */
 }
 
 .ods-img {
@@ -513,24 +512,17 @@ li {
 
 
 
-        /* ========== SOBRE O PROJETO ========== */
-        .sobre {
-            position: relative;
-            padding: 1.5rem;
-            margin: 1.5rem;
-            
-        }
+    /* ========== SOBRE O PROJETO ========== */
+    .sobre {
+        position: relative;
+        padding: 1.5rem;
+        margin: 1.5rem;
         
-        .ods {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            /* width: 100% */
-        }
-        
-        .ods-img {
-            width: calc((100% / 5) - 0.4rem);
-        }
+    }
+    
+    .ods-img {
+        width: calc((100% / 5) - 0.4rem);
+    }
 
 
 }
@@ -604,17 +596,23 @@ li {
 
 
 
-        /* PAGINA SOBRE O PROJETO*/
-        .sobre {
-            margin-left: 12rem;
-            margin-right: 12rem;
-        }
+    /* ========== SOBRE O PROJETO ========== */
+    .sobre {
+        position: relative;
+        padding: 3rem;
+        margin: 3rem;
+        
+    }
+
+    .ods-img {
+        width: calc((100% / 6) - 0.42rem);
+    }
     
-        /* PÁGINA QUEM SOMOS */
-        .quem-somos {
-            margin-left: 3rem;
-            margin-right: 3rem;
-        }
+    /* PÁGINA QUEM SOMOS */
+    .quem-somos {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
 
 }
 
@@ -624,10 +622,16 @@ li {
         max-width: 100%;
     }
 
-    /* PAGINA SOBRE O PROJETO*/
+    /* ========== SOBRE O PROJETO ========== */
     .sobre {
-        margin-left: 12rem;
-        margin-right: 12rem;
+        position: relative;
+        padding: 5rem;
+        margin: 3rem;
+        
+    }
+
+    .ods-img {
+        width: calc((100% / 7) - 0.43rem);
     }
 
     /* PÁGINA QUEM SOMOS */
@@ -659,15 +663,27 @@ li {
         max-width: 100%;
     }
 
-        /* ---------- jogos ---------- */
-        .main__games-cover {
+    /* ---------- jogos ---------- */
+    .main__games-cover {
+        position: relative;
+        width: 450px;
+        height: 270px;
+    }
+
+    .main__games-name {
+        left: 170px;
+    }
+
+        /* ========== SOBRE O PROJETO ========== */
+        .sobre {
             position: relative;
-            width: 450px;
-            height: 270px;
+            padding: 5rem;
+            margin: 3rem;
+            
         }
     
-        .main__games-name {
-            left: 170px;
+        .ods-img {
+            width: calc((100% / 8) - 0.44rem);
         }
 }
 
