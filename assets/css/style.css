@@ -468,7 +468,7 @@ li {
     
 } 
 
-/*========== MOBILE - MÉDIO ==========*/
+/*========== MOBILE - GRANDE ==========*/
 @media (min-width: 640px) {
 
     .container {
@@ -488,10 +488,11 @@ li {
     .main__games-name {
         left: 25px;
     }
+
 }
 
 
-/*========== MOBILE - GRANDE ==========*/
+/*========== TABLET ==========*/
 @media (min-width: 768px ) {
 
     .container {
@@ -508,9 +509,33 @@ li {
     .main__games-name {
         left: 40px;
     }
+
+
+
+
+        /* ========== SOBRE O PROJETO ========== */
+        .sobre {
+            position: relative;
+            padding: 1.5rem;
+            margin: 1.5rem;
+            
+        }
+        
+        .ods {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            /* width: 100% */
+        }
+        
+        .ods-img {
+            width: calc((100% / 5) - 0.4rem);
+        }
+
+
 }
 
-/*========== TABLET ==========*/
+/*========== DESKTOP - PEQUENO ==========*/
 @media (min-width: 1024px ) {
 
     .container {
@@ -593,7 +618,7 @@ li {
 
 }
 
-/*========== DESKTOP - PEQUENO ==========*/
+/*========== DESKTOP - MÉDIO ==========*/
 @media (min-width: 1280px) {
     .container {
         max-width: 100%;
@@ -627,7 +652,7 @@ li {
 }
 
 
-/*========== DESKTOP - MÉDIO ==========*/
+/*========== DESKTOP - GRANDE ==========*/
 @media (min-width:1536px) {
 
     .container {
@@ -646,7 +671,7 @@ li {
         }
 }
 
-/*========== DESKTOP - GRANDE ==========*/
+/*========== DESKTOP - 4k ==========*/
 @media (min-width:1820px) {
 
     .container {
