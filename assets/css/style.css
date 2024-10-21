@@ -91,7 +91,6 @@ a {
     text-decoration: none;
 }
 
-
 /* ========== PRINCIPAL ========== */
 
 /*---------- Cabeçalho ----------*/
@@ -310,7 +309,6 @@ a {
 
 
  /* ---------- rodapé ---------- */
-
 .footer {
     position: relative;
     width: 100%;
@@ -323,14 +321,14 @@ a {
     align-content: center;
 }
 
+
+
 /* ========== SOBRE O PROJETO ========== */
 .sobre {
     position: relative;
     padding: 1rem;
     margin: 1rem;
-    
 }
-
 
 .sobre__description{
     padding-top: 1.5rem;
@@ -347,14 +345,17 @@ a {
     width: calc((100% / 3) - 0.35rem);
 }
 
+
+
 /* ========== QUEM SOMOS ========== */
 
 .quem-somos {
-    margin-top: 16px;
-    padding: 16px;
+    position: relative;
+    padding: 1rem;
+    margin: 1rem;
 }
 
-.perfil {
+.quem-somos__perfil {
     width: 100%;
     /* height: 350px; */
     background-color: aquamarine;
@@ -364,13 +365,13 @@ a {
     border-radius: 20px;
 }
 
-.foto {
+.quem-somos__perfil-foto {
     width: 100%;
     position: static;
     /* margin-bottom: 16px; */
 }
 
-.info {
+.quem-somos__perfil-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -378,17 +379,17 @@ a {
     border: solid;
 }
 
-.nome {
+.quem-somos__perfil-nome {
     
 }
 
-.social {
+.quem-somos__perfil-social {
     display: flex;
     font-size: 16px;
     gap: 10px;
 }
 
-.descricao {
+.quem-somos__perfil-descricao {
     padding: 0px 10px 10px 10px;
 
 }
@@ -514,7 +515,6 @@ li {
 
     /* ========== SOBRE O PROJETO ========== */
     .sobre {
-        position: relative;
         margin-left: 1.5rem;
         margin-right: 1.5rem;
         
@@ -524,7 +524,11 @@ li {
         width: calc((100% / 5) - 0.4rem);
     }
 
-
+    /* ========== QUEM-SOMOS ========== */
+    .quem-somos {
+        padding: 1.5rem;
+        margin: 1.5rem;
+    }
 }
 
 /*========== DESKTOP - PEQUENO ==========*/
@@ -598,22 +602,17 @@ li {
 
     /* ========== SOBRE O PROJETO ========== */
     .sobre {
-        position: relative;
-        margin-top: 5rem;
-        margin-left: 3rem;
-        margin-right: 3rem;
-        margin-bottom: 5rem;
-        
+        margin: 5rem 3rem 5rem 3rem;
     }
 
     .ods-img {
         width: calc((100% / 6) - 0.42rem);
     }
     
-    /* PÁGINA QUEM SOMOS */
+    /* ========== QUEM-SOMOS ========== */
     .quem-somos {
-        margin-left: 3rem;
-        margin-right: 3rem;
+        padding: 1rem;
+        margin: 5rem 3rem 5rem 3rem;
     }
 
 }
@@ -626,7 +625,6 @@ li {
 
     /* ========== SOBRE O PROJETO ========== */
     .sobre {
-        position: relative;
         margin-left: 7rem;
         margin-right: 7rem;
         
@@ -636,10 +634,10 @@ li {
         width: calc((100% / 7) - 0.43rem);
     }
 
-    /* PÁGINA QUEM SOMOS */
+    /* ========== QUEM-SOMOS ========== */
     .quem-somos {
-        margin-left: 12rem;
-        margin-right: 12rem;
+        margin-left: 7rem;
+        margin-right: 7rem;
     }
 
 
@@ -660,10 +658,14 @@ li {
 
 /*========== DESKTOP - GRANDE ==========*/
 @media (min-width:1536px) {
-
+    /* container */
     .container {
         max-width: 100%;
     }
+
+    /* -=-=-=-=-= PRINCIPAL =-=-=-=-=- */
+
+
 
     /* ---------- jogos ---------- */
     .main__games-cover {
@@ -676,16 +678,23 @@ li {
         left: 170px;
     }
 
-        /* ========== SOBRE O PROJETO ========== */
-        .sobre {
-            position: relative;
-            margin-left: 16rem;
-            margin-right: 16rem;
-            
-        }
+    /* -=-=-=-=-= SOBRE O PROJETO =-=-=-=-=- */
+    .sobre {
+        margin-left: 16rem;
+        margin-right: 16rem;
+        
+    }
+
+    .ods-img {
+        width: calc((100% / 8) - 0.44rem);
+    }
+
+    /* -=-=-=-=-= QUEM-SOMOS =-=-=-=-=- */
+    .quem-somos {
+        margin-left: 16rem;
+        margin-right: 16rem;
+    }
     
-        .ods-img {
-            width: calc((100% / 8) - 0.44rem);
-        }
+    /* -=-=-=-=-= JOGO =-=-=-=-=- */
 }
 
