@@ -370,7 +370,6 @@ a {
     height: 300px;
     overflow: hidden;
     background-color: rgb(0, 0, 0);
-
 }
 
 .quem-somos__perfil-img {
@@ -495,6 +494,19 @@ li {
         left: 15px;
     }
     
+    /* QUEM SOMOS */
+    .quem-somos__perfil-foto {
+        width: 100%;
+        height: 300px;
+        }
+
+    .img2{    
+        top: -90px;
+        width: 100%;
+        /* height: 100%; */
+        position: relative;
+    }
+    
 } 
 
 /*========== MOBILE - GRANDE ==========*/
@@ -557,7 +569,19 @@ li {
     .quem-somos {
         padding: 1.5rem;
         margin: 1.5rem;
+
     }
+    .quem-somos__perfil {
+        flex-direction: row;
+        flex-grow: 1;
+    }
+
+    .quem-somos__perfil-foto {
+        /* width: calc(100/2); */
+        /* height: 450px; */
+    }
+
+
 }
 
 /*========== DESKTOP - PEQUENO ==========*/
