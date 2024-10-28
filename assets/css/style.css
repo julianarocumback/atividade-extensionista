@@ -678,8 +678,8 @@ li {
 
     /* ========== SOBRE O PROJETO ========== */
     .sobre {
-        margin-left: 7rem;
-        margin-right: 7rem;
+        margin-left: 15rem;
+        margin-right: 15rem;
         
     }
 
@@ -689,8 +689,8 @@ li {
 
     /* ========== QUEM-SOMOS ========== */
     .quem-somos {
-        margin-left: 7rem;
-        margin-right: 7rem;
+        margin-left: 15rem;
+        margin-right: 15rem;
     }
 
 
@@ -718,13 +718,26 @@ li {
 
     /* -=-=-=-=-= PRINCIPAL =-=-=-=-=- */
 
+    .pesquisa {
+        margin-left: 25rem;
+        margin-right: 25rem;
+    }
 
+    .main__divider{
+        margin-left: 25rem;
+        margin-right: 25rem;
+    }
 
     /* ---------- jogos ---------- */
+    .main__games {
+        margin-left: 25rem;
+        margin-right: 25rem;
+    }
+    
     .main__games-cover {
         position: relative;
-        width: 450px;
-        height: 270px;
+        width: calc(100% / 3);
+        /* height: 270px; */
     }
 
     .main__games-name {
@@ -733,8 +746,8 @@ li {
 
     /* -=-=-=-=-= SOBRE O PROJETO =-=-=-=-=- */
     .sobre {
-        margin-left: 16rem;
-        margin-right: 16rem;
+        margin-left: 25rem;
+        margin-right: 25rem;
         
     }
 
@@ -744,8 +757,8 @@ li {
 
     /* -=-=-=-=-= QUEM-SOMOS =-=-=-=-=- */
     .quem-somos {
-        margin-left: 16rem;
-        margin-right: 16rem;
+        margin-left: 25rem;
+        margin-right: 25rem;
     }
     
     /* -=-=-=-=-= JOGO =-=-=-=-=- */
