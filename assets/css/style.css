@@ -1,9 +1,7 @@
-/* FONTE DO GOOGLE */
+/* ========== FONTE DO GOOGLE  ========== */
 
-/*---------- VARIÁVEIS ----------*/
+/* ========== VARIÁVEIS ========== */
 :root {
-    --capa: .teste;
-
 
     /* Cores */
     --cor-primaria: rgb(250, 84, 87);
@@ -14,49 +12,35 @@
     /* Tipografia */
     --font-family: "Cera Round Pro";
     
-    --body-font-small:;
-    --body-font-medium:;
-    --body-font-large:;
-    --body-font-xlarge:;
-
+    --body-font-size: 1rem;
     --h1-font-size: 2rem;
-    --h2-font-size:;
-    --h3-font-size:;
-    --h4-font-size:;
-    --h5-font-size:;
-    --h6-font-size:;
+    --h2-font-size: 1.5rem;
 
-    --font-thin: 100; 
-    --font-extra-light: 200;
-    --font-light: 300;
     --font-regular: 400;
     --font-medium: 500;
     --font-semi-bold: 600;
     --font-bold: 700;
-    --font-extra-bold: 800;
-    --font-black:900;
 
     --icon-font-small: 24;
     --icon-font-medium: 32;
     --icon-font-large: 40;
-    
 }
 
-/*---------- RESET ----------*/
+/* ========== RESET ========== */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* ---------- BASE ---------- */
+/* ========== BASE ========== */
 html{
     scroll-behavior: smooth;
 }
 
 body {
     font-family: var(--font-family);
-    font-weight: ;
+    /* font-weight: ; */
 }
 
 .container {
@@ -66,8 +50,10 @@ body {
 }
 
 .main {
-    margin-top: 50px;
-    height: 100%;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+    /* height: 100%; */
+    position: relative;
 }
 
 
@@ -91,7 +77,20 @@ a {
     text-decoration: none;
 }
 
-/* ========== PRINCIPAL ========== */
+ /* ---------- rodapé ---------- */
+ .footer {
+    position: relative;
+    width: 100%;
+    height: 3.5rem;
+    left: 0px;
+    bottom: 0px;
+
+    background-color: var(--cor-primaria);
+    text-align: center;
+    align-content: center;
+}
+
+/* -=-=-=-=-= PRINCIPAL =-=-=-=-=- */
 
 /*---------- Cabeçalho ----------*/
 .header {
@@ -99,7 +98,7 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    height: 50px;
+    height: 3.5rem;
     z-index: 100;
 
     padding: 0px 16px 0px 16px;
@@ -308,22 +307,8 @@ a {
 
 
 
- /* ---------- rodapé ---------- */
-.footer {
-    position: relative;
-    width: 100%;
-    height: 3.5rem;
-    left: 0;
-    bottom: 0;
 
-    background-color: var(--cor-primaria);
-    text-align: center;
-    align-content: center;
-}
-
-
-
-/* ========== SOBRE O PROJETO ========== */
+/* -=-=-=-=-= SOBRE O PROJETO =-=-=-=-=- */
 .sobre {
     position: relative;
     padding: 1rem;
@@ -339,6 +324,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    margin-bottom: 5rem;
 }
 
 .ods-img {
@@ -347,7 +333,7 @@ a {
 
 
 
-/* ========== QUEM SOMOS ========== */
+/* -=-=-=-=-= QUEM SOMOS =-=-=-=-=- */
 
 .quem-somos {
     position: relative;
@@ -359,6 +345,7 @@ a {
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 500px;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     overflow: hidden;
@@ -367,7 +354,7 @@ a {
 
 .quem-somos__perfil-foto {
     width: 100%;
-    height: 300px;
+    height: 500px;
     overflow: hidden;
     background-color: rgb(255, 242, 237);
 }
@@ -423,7 +410,7 @@ a {
 }
 
 
-/*========== PÁGINA DO JOGO ==========*/
+/* -=-=-=-=-= PÁGINA DO JOGO =-=-=-=-=- */
 .pagina__jogo {
     padding: 16px;
 }
@@ -464,9 +451,10 @@ li {
 
 
 
-/*========== MOBILE - PEQUENO ==========*/
+/* ========== MOBILE - PEQUENO ========== */
 @media (min-width: 475px) {
 
+    /* -=-=-=-=-= PRINCIPAL =-=-=-=-=- */
     .container {
        max-width: 100%;
 
@@ -494,24 +482,26 @@ li {
         left: 15px;
     }
     
-    /* QUEM SOMOS */
+    /* -=-=-=-=-= QUEM SOMOS =-=-=-=-=- */
     .quem-somos__perfil-foto {
         width: 100%;
-        height: 300px;
+        height: 400px;
         }
 
     .img2{    
         top: -90px;
-        width: 100%;
+        width:100%;
+        
         /* height: 100%; */
         position: relative;
     }
     
 } 
 
-/*========== MOBILE - GRANDE ==========*/
+/* ========== MOBILE - GRANDE ========== */
 @media (min-width: 640px) {
 
+    /* -=-=-=-=-= PRINCIPAL =-=-=-=-=- */
     .container {
         max-width: 100%;
     }
@@ -529,13 +519,27 @@ li {
     .main__games-name {
         left: 25px;
     }
+    /* -=-=-=-=-= QUEM SOMOS =-=-=-=-=- */
+    .quem-somos__perfil-foto {
+        width: 100%;
+        height: 500px;
+        }
+
+    .img2{    
+        top: -120px;
+        width: 100%;
+        position: relative;
+    }
+
+
 
 }
 
 
-/*========== TABLET ==========*/
+/* ========== TABLET ========== */
 @media (min-width: 768px ) {
 
+    /* -=-=-=-=-= PRINCIPAL =-=-=-=-=- */
     .container {
         max-width: 100%;
     }
@@ -554,7 +558,7 @@ li {
 
 
 
-    /* ========== SOBRE O PROJETO ========== */
+    /* -=-=-=-=-= SOBRE O PROJETO =-=-=-=-=- */
     .sobre {
         margin-left: 1.5rem;
         margin-right: 1.5rem;
@@ -565,28 +569,50 @@ li {
         width: calc((100% / 5) - 0.4rem);
     }
 
-    /* ========== QUEM-SOMOS ========== */
+    /* -=-=-=-=-= QUEM-SOMOS =-=-=-=-=- */
     .quem-somos {
         padding: 1.5rem;
         margin: 1.5rem;
+
 
     }
     .quem-somos__perfil {
         flex-direction: row;
         flex-grow: 1;
+        height: 200px;
     }
 
     .quem-somos__perfil-foto {
-        /* width: calc(100/2); */
-        /* height: 450px; */
+        width: 30%;
+        /* height: 200px; */
+        }
+
+    .img2{    
+        top: -25px;
+        width: 100%;
+        /* height: 100%; */
+        position: relative;
     }
 
+    .quem-somos__perfil-info {
+        width: 70%;
+        overflow: hidden;
+    }
 
+    .img2{    
+        top: -50px;
+        width: 100%;
+        position: relative;
+    }
 }
 
-/*========== DESKTOP - PEQUENO ==========*/
-@media (min-width: 1024px ) {
 
+
+
+
+/* ========== DESKTOP - PEQUENO ========== */
+@media (min-width: 1024px ) {
+    /* -=-=-=-=-= PRINCIPAL =-=-=-=-=- */
     .container {
         max-width: 100%;
     }
@@ -653,7 +679,7 @@ li {
 
 
 
-    /* ========== SOBRE O PROJETO ========== */
+    /* -=-=-=-=-= SOBRE O PROJETO =-=-=-=-=- */
     .sobre {
         margin: 5rem 3rem 5rem 3rem;
     }
@@ -662,21 +688,29 @@ li {
         width: calc((100% / 6) - 0.42rem);
     }
     
-    /* ========== QUEM-SOMOS ========== */
+    /* -=-=-=-=-= QUEM-SOMOS =-=-=-=-=- */
     .quem-somos {
         padding: 1rem;
         margin: 5rem 3rem 5rem 3rem;
     }
 
+    .quem-somos__perfil {
+        height: 220px;
+    }
 }
 
-/*========== DESKTOP - MÉDIO ==========*/
+
+
+
+
+
+/* ========== DESKTOP - MÉDIO ========== */
 @media (min-width: 1280px) {
     .container {
         max-width: 100%;
     }
 
-    /* ========== SOBRE O PROJETO ========== */
+    /* -=-=-=-=-= SOBRE O PROJETO =-=-=-=-=- */
     .sobre {
         margin-left: 15rem;
         margin-right: 15rem;
@@ -687,7 +721,7 @@ li {
         width: calc((100% / 7) - 0.43rem);
     }
 
-    /* ========== QUEM-SOMOS ========== */
+    /* -=-=-=-=-= QUEM-SOMOS =-=-=-=-=- */
     .quem-somos {
         margin-left: 15rem;
         margin-right: 15rem;
@@ -705,11 +739,15 @@ li {
         left: 100px;
     }
 
-
+    /* -=-=-=-=-= JOGO =-=-=-=-=- */
 }
 
 
-/*========== DESKTOP - GRANDE ==========*/
+
+
+
+
+/* ========== DESKTOP - GRANDE ========== */
 @media (min-width:1536px) {
     /* container */
     .container {
@@ -762,5 +800,5 @@ li {
     }
     
     /* -=-=-=-=-= JOGO =-=-=-=-=- */
-}
 
+}
