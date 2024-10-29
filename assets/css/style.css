@@ -449,14 +449,6 @@ li {
        max-width: 100%;
     }
 
-    .header {
-        /* background-color: ; */
-    }
-
-    .header__nav {
-        /*  */
-    }
-
     /*-=-=-=-=-= PRINCIPAL =-=-=-=-=-*/
     /*----- banner -----*/
     .main__banner-img {
@@ -622,15 +614,14 @@ li {
 
 /* ========== DESKTOP - PEQUENO ========== */
 @media (min-width: 1024px ) {
+    /* BASE */
     .header__nav{
-    
         position: static;
         width: auto;
 
         display: flex;
         align-items: center;
         padding: 0;
-
     }
     
     .header__nav-button--open,
@@ -652,11 +643,7 @@ li {
         width: 0px;
         top: 0px;
     }
-    
-    .header__nav-item {
-        /* a */
-    }
-    
+     
     .header__nav-button--close {
         display: none;
     }
@@ -665,7 +652,9 @@ li {
         display: none;
     }
 
-    /* ---------- jogos ---------- */
+    /*-=-=-=-=-= PRINCIPAL =-=-=-=-=-*/
+
+    /*----- jogos -----*/
     .main__games-cover {
         position: relative;
         width: 300px;
@@ -675,13 +664,6 @@ li {
     .main__games-name {
         left: 100px;
     }
-
-    /* -=-=-=-=-= JOGO =-=-=-=-=- */
-    .canvas {
-        /* height: 40550px; */
-    }
-
-
 
     /* -=-=-=-=-= SOBRE O PROJETO =-=-=-=-=- */
     .sobre {
@@ -700,32 +682,6 @@ li {
 
     .quem-somos__perfil {
         height: 220px;
-    }
-}
-
-    /* -=-=-=-=-= QUEM-SOMOS =-=-=-=-=- */
-    .quem-somos {
-        padding: 1.5rem;
-        margin: 1.5rem;
-
-
-    }
-    .quem-somos__perfil {
-        flex-direction: row;
-        flex-grow: 1;
-        height: 200px;
-    }
-
-    .quem-somos__perfil-foto {
-        width: 30%;
-        /* height: 200px; */
-        }
-
-    .img2{    
-        top: -25px;
-        width: 100%;
-        /* height: 100%; */
-        position: relative;
     }
 
     .quem-somos__perfil-info {
@@ -746,7 +702,6 @@ li {
 
     .canvas {
         height: 500px;
-
     }
 
     .info__jogo {  /* div */
@@ -762,8 +717,7 @@ li {
         border-radius: 1rem;
         width: 70%;
     }
-
-
+}
 
 
 /* ========== DESKTOP - MÉDIO ========== */
