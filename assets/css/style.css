@@ -57,16 +57,10 @@ body {
 }
 
 
-canvas {
-    background-color: antiquewhite;
-    width: 100%;
-    height: 250px;
-    border-color: aquamarine;
-}
+
 
 h1, h2, h3, h4, h5, h6 {
     color: brown;
-    margin-top: 1rem;
 }
 
 .titulo {
@@ -75,6 +69,11 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     text-decoration: none;
+}
+
+li {
+    
+    list-style: none;
 }
 
  /* ---------- rodapé ---------- */
@@ -411,38 +410,66 @@ a {
 
 
 /* -=-=-=-=-= PÁGINA DO JOGO =-=-=-=-=- */
-.pagina__jogo {
-    padding: 16px;
+.pagina__jogo {  /* seção */
+    padding: 1rem;
+    margin: 1rem;
 }
 
-.como__jogar {
+.nome__jogo {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.canvas {
+    background-color: rgb(212, 212, 212);
+    width: 100%;
+    height: 200px;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+}
+
+.como__jogar {  /* div */
     padding: 10px;
     width: 100%;
-
-    /* background-color: aqua; */
-    border: 1px solid;
+    border-radius: 1rem;
+    border: 1px solid #e4e4e4;
+    margin-bottom: 1rem;
 }
 
-.info__jogo {
-    margin-top: 10px;
-    padding: 10px;
+.info__jogo {  /* div */
     display: flex;
-    justify-content: space-between;
-    gap: 50px;
+    flex-direction: column;
+    border-radius: 1rem;
+}
 
-    background-color: ;
-    border: solid 1px;
+.descricao__jogo {  /* dentro de info__jogo */
+    /* width: 70%; */
+    border: 1px solid #e4e4e4;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.objetivos {
+    border: 1px solid #e4e4e4;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.titulo__descricao{
+    margin-bottom: 1rem;
+}
+
+.titulo__lista {
+    margin-bottom: 1rem;
+}
+
+.lista_objetivos > li {  /* dentro de info__jogo */
+    list-style: circle;
+    list-style-position: inside;
 }
 
 
-.para__que {
-    width: 500px;
-}
 
-li {
-    
-    list-style: none;
-}
 
 
 
@@ -495,7 +522,12 @@ li {
         /* height: 100%; */
         position: relative;
     }
-    
+
+    /* -=-=-=-=-= PÁGINA DO JOGO =-=-=-=-=- */
+    .canvas {
+        height: 300px;
+    }
+
 } 
 
 /* ========== MOBILE - GRANDE ========== */
@@ -531,13 +563,15 @@ li {
         position: relative;
     }
 
-
-
+    /* -=-=-=-=-= PÁGINA DO JOGO =-=-=-=-=- */
+    .canvas {
+        height: 350px;
+    }
 }
 
 
 /* ========== TABLET ========== */
-@media (min-width: 768px ) {
+@media (min-width: 768px) {
 
     /* -=-=-=-=-= PRINCIPAL =-=-=-=-=- */
     .container {
@@ -604,11 +638,38 @@ li {
         width: 100%;
         position: relative;
     }
+
+
+    /* -=-=-=-=-= PÁGINA DO JOGO =-=-=-=-=- */
+    .pagina__jogo {  /* seção */
+        padding: 1.5rem;
+        margin: 1.5rem;
+    }
+
+    .canvas {
+        background-color: rgb(212, 212, 212);
+        width: 100%;
+        height: 400px;
+        margin-bottom: 0.5rem;
+        border-radius: 1rem;
+    }
+
+    .info__jogo {  /* div */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+        border-radius: 1rem;
+    }
+
+    .descricao__jogo {
+        width: 70%;
+    }
+
+    .objetivos {
+        width: 30%;
+    }
 }
-
-
-
-
 
 /* ========== DESKTOP - PEQUENO ========== */
 @media (min-width: 1024px ) {
@@ -699,7 +760,65 @@ li {
     }
 }
 
+    /* -=-=-=-=-= QUEM-SOMOS =-=-=-=-=- */
+    .quem-somos {
+        padding: 1.5rem;
+        margin: 1.5rem;
 
+
+    }
+    .quem-somos__perfil {
+        flex-direction: row;
+        flex-grow: 1;
+        height: 200px;
+    }
+
+    .quem-somos__perfil-foto {
+        width: 30%;
+        /* height: 200px; */
+        }
+
+    .img2{    
+        top: -25px;
+        width: 100%;
+        /* height: 100%; */
+        position: relative;
+    }
+
+    .quem-somos__perfil-info {
+        width: 70%;
+        overflow: hidden;
+    }
+
+    .img2{    
+        top: -50px;
+        width: 100%;
+        position: relative;
+    }
+
+    /* -=-=-=-=-= PÁGINA DO JOGO =-=-=-=-=- */
+    .pagina__jogo {  /* seção */
+        margin: 5rem 3rem 5rem 3rem;
+    }
+
+    .canvas {
+        height: 500px;
+
+    }
+
+    .info__jogo {  /* div */
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0.5rem;
+    }
+
+    .descricao__jogo {  /* dentro de info__jogo */
+        /* width: 70%; */
+        border: 1px solid #e4e4e4;
+        padding: 1rem;
+        border-radius: 1rem;
+        width: 70%;
+    }
 
 
 
@@ -740,6 +859,30 @@ li {
     }
 
     /* -=-=-=-=-= JOGO =-=-=-=-=- */
+
+    .pagina__jogo {
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
+
+    .canvas {
+        height: 500px;
+
+    }
+
+    .info__jogo {  /* div */
+
+    }
+
+    .descricao__jogo {  /* dentro de info__jogo */
+        /* width: 70%; */
+        border: 1px solid #e4e4e4;
+        padding: 1rem;
+        border-radius: 1rem;
+        width: 70%;
+    }
+
+
 }
 
 
@@ -800,5 +943,9 @@ li {
     }
     
     /* -=-=-=-=-= JOGO =-=-=-=-=- */
+    .pagina__jogo {
+        margin-left: 25rem;
+        margin-right: 25rem;
+    }
 
 }
