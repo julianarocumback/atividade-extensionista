@@ -544,18 +544,19 @@ li {
 /*----- pesquisa -----*/
 .main__pesquisa {
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+    flex-direction: row;
     margin-left: 1rem;
     margin-right: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
     margin-bottom: 12px;
+    justify-content: space-between;
 }
 
 .area__pesquisa {
     display: flex;
     gap: 0.7rem;
+    width: 70%;
 }
 .pesquisa {
     display: flex;
@@ -564,7 +565,7 @@ li {
 }
 
 .caixa__pesquisa {
-    height: 30px;
+    height: 35px;
     width: 100%;
     border-radius: 10px;
     background-color: aliceblue;
@@ -573,28 +574,17 @@ li {
 
 .botao-pesquisa {
     position: absolute;
-    padding-top: 0.3rem;
+    padding-top: 0.5rem;
     padding-left: 0.5rem;
 }
 
 .filtro {
-    height: 30px;
-    width: 30px;
-    background-color: rgb(167, 163, 172);
-    border-radius: 6px;
-    border: 1px solid red;
-    align-content: center;
-    text-align: center;
-    cursor: pointer;
-}
-
-.categoria {
-
     display: none;
 }
 
-.mostrar-categoria {
-    display: block;
+.categoria {
+    display: flex;
+    gap: 0.5rem;
 }
 
     /* ---------- jogos ---------- */
