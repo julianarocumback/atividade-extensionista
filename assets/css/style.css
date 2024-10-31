@@ -235,42 +235,46 @@ li {
     flex-wrap: wrap;
     margin: 0rem 1rem 2rem 1rem;
     padding: 0px 1rem 0px 1rem;
-    gap: 10px;
-    margin: 0rem 1rem 2rem 1rem;
-    padding: 0px 1rem 0px 1rem;
-    gap: 10px;
+    gap: 1rem;
+    position: static;
 }
 
-.main__games-cover {
-    width: calc(100%/3 - 2rem);
-    flex-grow: 1;
-    width: calc(100%/3 - 2rem);
-    flex-grow: 1;
+.main__games-game {
+    width: calc(100% / 3 - 1rem);
+    height: auto;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    z-index: 0;
+    position: relative;
 }
 
-.teste {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 5%, #000 100%);
-    bottom: 0px;
+.main__games-cover {
+    z-index: 0;
     position: absolute;
-    width: 100%;
-    height: 50px;
+}
+
+.main__games-cover-shadow {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 55%, #000 100%);
+    height: 100%;
+    /* position: absolute; */
+    left: 50px;
+    z-index: 1;
 }
 
 .main__games-img {
-    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25) inset;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
+    z-index: 0;
 }
 
 
 .main__games-name {
-    color: white;
+    color: rgb(199, 49, 49);
     position: absolute;
     left: 23px;
     bottom: 40px;
+    z-index: 0;
 }
 
 
@@ -530,62 +534,61 @@ li {
 @media (min-width: 768px) {
     /* PRINCIPAL */
     /*----- banner -----*/
-.main__banner {
-    width: 100%;
-    height: 350px;
-}
+    .main__banner {
+        width: 100%;
+        height: 330px;
+    }
 
-.main__banner-img {
-    width: 100%;
-    position: relative;
-    top: -100px;
-}
+    .main__banner-img {
+        width: 100%;
+        position: relative;
+        top: -100px;
+    }
 
-/*----- pesquisa -----*/
-.main__pesquisa {
-    display: flex;
-    flex-direction: row;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-bottom: 12px;
-    justify-content: space-between;
-}
+    /*----- pesquisa -----*/
+    .main__pesquisa {
+        display: flex;
+        flex-direction: row;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 12px;
+        justify-content: space-between;
+    }
 
-.area__pesquisa {
-    display: flex;
-    gap: 0.7rem;
-    width: 70%;
-}
-.pesquisa {
-    display: flex;
-    position: relative;
-    width: 100%;
-}
+    .area__pesquisa {
+        display: flex;
+        width: 70%;
+    }
+    .pesquisa {
+        display: flex;
+        position: relative;
+        width: 100%;
+    }
 
-.caixa__pesquisa {
-    height: 35px;
-    width: 100%;
-    border-radius: 10px;
-    background-color: aliceblue;
-    padding-left: 30px;
-}
+    .caixa__pesquisa {
+        height: 35px;
+        width: 100%;
+        border-radius: 10px;
+        background-color: aliceblue;
+        padding-left: 30px;
+    }
 
-.botao-pesquisa {
-    position: absolute;
-    padding-top: 0.5rem;
-    padding-left: 0.5rem;
-}
+    .botao-pesquisa {
+        position: absolute;
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+    }
 
-.filtro {
-    display: none;
-}
+    .filtro {
+        display: none;
+    }
 
-.categoria {
-    display: flex;
-    gap: 0.5rem;
-}
+    .categoria {
+        display: flex;
+        gap: 0.5rem;
+    }
 
     /* ---------- jogos ---------- */
     .main__games-cover {
