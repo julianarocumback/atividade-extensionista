@@ -153,45 +153,43 @@ li {
 
 /*----- banner -----*/
 .main__banner {
-    background-color: rgb(255, 255, 255);
     width: 100%;
-    height: 150px;
+    height: 200px;
     overflow: hidden;
-    
+    margin-bottom: 35px;
 }
 
 .main__banner-img {
-    width: 475px;
-    top: -50px;
+    width: 100%;
     position: relative;
-}
-
-.img {
-    position: relative;
-    top: -50px;
+    top: -20px;
 }
 
 /*----- pesquisa -----*/
-.pesquisa {
+.main__pesquisa {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
     margin-bottom: 12px;
-    margin-top: 45px;
-    gap: 10px;
 }
 
 .area__pesquisa {
     display: flex;
-    gap: 10px;
+    gap: 0.7rem;
+}
+.pesquisa {
+    display: flex;
+    position: relative;
+    width: 100%;
 }
 
 .caixa__pesquisa {
-    width: 100%;
     height: 30px;
+    width: 100%;
     border-radius: 10px;
     background-color: aliceblue;
     padding-left: 30px;
@@ -199,7 +197,8 @@ li {
 
 .botao-pesquisa {
     position: absolute;
-    /* top: px; */
+    padding-top: 0.3rem;
+    padding-left: 0.5rem;
 }
 
 .filtro {
@@ -412,6 +411,7 @@ li {
     display: flex;
     flex-direction: column;
     border-radius: 1rem;
+    gap: 1rem;
 }
 
 .descricao__jogo {  /* dentro de info__jogo */
@@ -451,18 +451,16 @@ li {
 
     /*-=-=-=-=-= PRINCIPAL =-=-=-=-=-*/
     /*----- banner -----*/
+    .main__banner {
+        width: 100%;
+        height: 220px;
+    }
+
     .main__banner-img {
         width: 100%;
+        top: -20px;
     }
 
-    /*----- jogos -----*/
-    .main__games-cover {
-        /*  */
-    }
-
-    .main__games-name {
-        left: 15px;
-    }
     
     /* -=-=-=-=-= QUEM SOMOS =-=-=-=-=- */
     .quem-somos__perfil-foto {
@@ -487,6 +485,18 @@ li {
 
 /* ========== MOBILE - GRANDE ========== */
 @media (min-width: 640px) {
+    /* PRINCIPAL */
+    /*----- banner -----*/
+    .main__banner {
+        width: 100%;
+        height: 250px;
+    }
+
+    .main__banner-img {
+        width: 100%;
+        top: -20px;
+    }
+
     /* ---------- jogos ---------- */
     .main__games-cover {
         position: relative;
@@ -518,6 +528,74 @@ li {
 
 /* ========== TABLET ========== */
 @media (min-width: 768px) {
+    /* PRINCIPAL */
+    /*----- banner -----*/
+.main__banner {
+    width: 100%;
+    height: 350px;
+}
+
+.main__banner-img {
+    width: 100%;
+    position: relative;
+    top: -100px;
+}
+
+/*----- pesquisa -----*/
+.main__pesquisa {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 12px;
+}
+
+.area__pesquisa {
+    display: flex;
+    gap: 0.7rem;
+}
+.pesquisa {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.caixa__pesquisa {
+    height: 30px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: aliceblue;
+    padding-left: 30px;
+}
+
+.botao-pesquisa {
+    position: absolute;
+    padding-top: 0.3rem;
+    padding-left: 0.5rem;
+}
+
+.filtro {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(167, 163, 172);
+    border-radius: 6px;
+    border: 1px solid red;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.categoria {
+
+    display: none;
+}
+
+.mostrar-categoria {
+    display: block;
+}
 
     /* ---------- jogos ---------- */
     .main__games-cover {
@@ -599,8 +677,8 @@ li {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 2rem;
         border-radius: 1rem;
+
     }
 
     .descricao__jogo {
@@ -706,8 +784,7 @@ li {
 
     .info__jogo {  /* div */
         flex-direction: row;
-        justify-content: space-between;
-        gap: 0.5rem;
+        /* justify-content: space-between; */
     }
 
     .descricao__jogo {  /* dentro de info__jogo */
@@ -761,10 +838,6 @@ li {
 
     .canvas {
         height: 500px;
-
-    }
-
-    .info__jogo {  /* div */
 
     }
 
