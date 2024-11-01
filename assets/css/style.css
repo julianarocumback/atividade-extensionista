@@ -44,14 +44,11 @@ body {
 }
 
 .container {
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 5rem 1.5rem 3rem 1.5rem;
 }
 
 .main {
-    margin-top: 3.5rem;
-    margin-bottom: 3.5rem;
+    padding: 1rem;
     position: relative;
 }
 
@@ -152,14 +149,14 @@ li {
 
 
 /*----- banner -----*/
-.main__banner {
+.banner {
     width: 100%;
     height: 200px;
     overflow: hidden;
     margin-bottom: 35px;
 }
 
-.main__banner-img {
+.banner__img {
     width: 100%;
     position: relative;
     top: -20px;
@@ -171,8 +168,6 @@ li {
     flex-direction: column;
     gap: 0.5rem;
     margin-left: 1rem;
-    margin-right: 1rem;
-    padding-left: 1rem;
     padding-right: 1rem;
     margin-bottom: 12px;
 }
@@ -223,9 +218,9 @@ li {
 
 
 .main__divider {
-    margin: 0px 16px 30px 16px;
     border-color: rgba(0, 0, 0, 0.1);
     padding: 0px 16px 0px 16px;
+    margin-bottom: 1rem;
 }
 
 /* ----- jogos ----- */
@@ -233,10 +228,9 @@ li {
 .main__games {
     display: flex;
     flex-wrap: wrap;
-    margin: 0rem 1rem 2rem 1rem;
     padding: 0px 1rem 0px 1rem;
     gap: 1rem;
-    position: static;
+    position: relative;
 }
 
 .main__games-game {
@@ -251,21 +245,19 @@ li {
 
 .main__games-cover {
     z-index: 0;
-    position: absolute;
+    position: relative;
 }
 
 .main__games-cover-shadow {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 55%, #000 100%);
     height: 100%;
-    /* position: absolute; */
-    left: 50px;
+    position: relative;
     z-index: 1;
 }
 
 .main__games-img {
     width: 100%;
-    /* height: 100%; */
-    z-index: 0;
+    position: relative;
 }
 
 
@@ -274,28 +266,25 @@ li {
     position: absolute;
     left: 23px;
     bottom: 40px;
-    z-index: 0;
+    z-index: 2;
 }
 
 
 /* -=-=-=-=-= SOBRE O PROJETO =-=-=-=-=- */
 .sobre {
     position: relative;
-    padding: 1rem;
-    margin: 1rem;
 }
 
 /*----- descrição -----*/
 .sobre__description{
-    padding-top: 1.5rem;
-    padding-bottom: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .ods {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-bottom: 5rem;
 }
 
 .ods-img {
@@ -306,8 +295,6 @@ li {
 /* -=-=-=-=-= QUEM SOMOS =-=-=-=-=- */
 .quem-somos {
     position: relative;
-    padding: 1rem;
-    margin: 1rem;
 }
 
 /* perfis */
@@ -383,14 +370,9 @@ li {
 
 
 /* -=-=-=-=-= PÁGINA DO JOGO =-=-=-=-=- */
-.pagina__jogo {  /* seção */
-    padding: 1rem;
-    margin: 1rem;
-}
 
 .nome__jogo {
     margin-bottom: 1rem;
-    margin-top: 1rem;
 }
 
 /*----- jogo -----*/
@@ -448,10 +430,6 @@ li {
 /*========== MOBILE - PEQUENO ==========*/
 @media (min-width: 475px) {
 
-    /*-=-=-=-=-= BASE =-=-=-=-=-*/
-    .container {
-       max-width: 100%;
-    }
 
     /*-=-=-=-=-= PRINCIPAL =-=-=-=-=-*/
     /*----- banner -----*/
@@ -464,7 +442,6 @@ li {
         width: 100%;
         top: -20px;
     }
-
     
     /* -=-=-=-=-= QUEM SOMOS =-=-=-=-=- */
     .quem-somos__perfil-foto {
@@ -482,13 +459,16 @@ li {
 
     /* -=-=-=-=-= PÁGINA DO JOGO =-=-=-=-=- */
     .canvas {
-        height: 300px;
+        height: 250px;
     }
 } 
 
 
 /* ========== MOBILE - GRANDE ========== */
 @media (min-width: 640px) {
+    /*-=-=-=-=-= BASE =-=-=-=-=-*/
+
+
     /* PRINCIPAL */
     /*----- banner -----*/
     .main__banner {
@@ -532,6 +512,13 @@ li {
 
 /* ========== TABLET ========== */
 @media (min-width: 768px) {
+    .container {
+        margin: 5rem 2rem 5rem 2rem;
+    }
+    .main {
+        padding: 1.5rem;
+        position: relative;
+    }
     /* PRINCIPAL */
     /*----- banner -----*/
     .main__banner {
@@ -605,23 +592,13 @@ li {
 
 
     /* -=-=-=-=-= SOBRE O PROJETO =-=-=-=-=- */
-    .sobre {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-        
-    }
     
     .ods-img {
         width: calc((100% / 5) - 0.4rem);
     }
 
     /* -=-=-=-=-= QUEM-SOMOS =-=-=-=-=- */
-    .quem-somos {
-        padding: 1.5rem;
-        margin: 1.5rem;
 
-
-    }
     .quem-somos__perfil {
         flex-direction: row;
         flex-grow: 1;
@@ -653,15 +630,10 @@ li {
 
 
     /* -=-=-=-=-= PÁGINA DO JOGO =-=-=-=-=- */
-    .pagina__jogo {  /* seção */
-        padding: 1.5rem;
-        margin: 1.5rem;
-    }
-
     .canvas {
         background-color: rgb(212, 212, 212);
         width: 100%;
-        height: 350px;
+        height: 380px;
         margin-bottom: 0.5rem;
         border-radius: 1rem;
     }
@@ -686,6 +658,16 @@ li {
 /* ========== DESKTOP - PEQUENO ========== */
 @media (min-width: 1024px ) {
     /* BASE */
+    .container {
+        margin: 5rem 3rem 5rem 3rem;
+    }
+
+    .main {
+        padding: 2rem;
+        position: relative;
+    }
+    
+
     .header__nav{
         position: static;
         width: auto;
@@ -737,20 +719,12 @@ li {
     }
 
     /* -=-=-=-=-= SOBRE O PROJETO =-=-=-=-=- */
-    .sobre {
-        margin: 5rem 3rem 5rem 3rem;
-    }
 
     .ods-img {
         width: calc((100% / 6) - 0.42rem);
     }
     
     /* -=-=-=-=-= QUEM-SOMOS =-=-=-=-=- */
-    .quem-somos {
-        padding: 1rem;
-        margin: 5rem 3rem 5rem 3rem;
-    }
-
     .quem-somos__perfil {
         height: 220px;
     }
@@ -767,21 +741,16 @@ li {
     }
 
     /* -=-=-=-=-= PÁGINA DO JOGO =-=-=-=-=- */
-    .pagina__jogo {  /* seção */
-        margin: 5rem 3rem 5rem 3rem;
-    }
-
     .canvas {
         height: 500px;
     }
 
     .info__jogo {  /* div */
         flex-direction: row;
-        /* justify-content: space-between; */
     }
 
     .descricao__jogo {  /* dentro de info__jogo */
-        /* width: 70%; */
+
         border: 1px solid #e4e4e4;
         padding: 1rem;
         border-radius: 1rem;
@@ -792,23 +761,22 @@ li {
 
 /* ========== DESKTOP - MÉDIO ========== */
 @media (min-width: 1280px) {
+    .container {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        max-width: 1280px;
+        left: calc(100% / 10)
 
-    /* -=-=-=-=-= SOBRE O PROJETO =-=-=-=-=- */
-    .sobre {
-        margin-left: 15rem;
-        margin-right: 15rem;
-        
     }
+    /* -=-=-=-=-= SOBRE O PROJETO =-=-=-=-=- */
 
     .ods-img {
         width: calc((100% / 7) - 0.43rem);
     }
 
     /* -=-=-=-=-= QUEM-SOMOS =-=-=-=-=- */
-    .quem-somos {
-        margin-left: 15rem;
-        margin-right: 15rem;
-    }
+ 
 
 
     /* ---------- jogos ---------- */
@@ -824,13 +792,10 @@ li {
 
     /* -=-=-=-=-= JOGO =-=-=-=-=- */
 
-    .pagina__jogo {
-        margin-left: 15rem;
-        margin-right: 15rem;
-    }
+
 
     .canvas {
-        height: 500px;
+        height: 600px;
 
     }
 
@@ -842,66 +807,5 @@ li {
         width: 70%;
     }
 
-
-}
-
-
-
-
-
-
-/* ========== DESKTOP - GRANDE ========== */
-@media (min-width:1536px) {
-
-    /* -=-=-=-=-= PRINCIPAL =-=-=-=-=- */
-
-    .pesquisa {
-        margin-left: 25rem;
-        margin-right: 25rem;
-    }
-
-    .main__divider{
-        margin-left: 25rem;
-        margin-right: 25rem;
-    }
-
-    /* ---------- jogos ---------- */
-    .main__games {
-        margin-left: 25rem;
-        margin-right: 25rem;
-    }
-    
-    .main__games-cover {
-        position: relative;
-        width: calc(100% / 3);
-        /* height: 270px; */
-    }
-
-    .main__games-name {
-        left: 170px;
-    }
-
-    /* -=-=-=-=-= SOBRE O PROJETO =-=-=-=-=- */
-    .sobre {
-        margin-left: 25rem;
-        margin-right: 25rem;
-        
-    }
-
-    .ods-img {
-        width: calc((100% / 8) - 0.44rem);
-    }
-
-    /* -=-=-=-=-= QUEM-SOMOS =-=-=-=-=- */
-    .quem-somos {
-        margin-left: 25rem;
-        margin-right: 25rem;
-    }
-    
-    /* -=-=-=-=-= JOGO =-=-=-=-=- */
-    .pagina__jogo {
-        margin-left: 25rem;
-        margin-right: 25rem;
-    }
 
 }

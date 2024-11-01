@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Jogos educativos para crianças">
-    <title>Jogo da forca</title>
+    <title>Jogo da cobrinha</title>
     
     <!-- Conteúdo externo -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- Cabeçalho -->
-    <header class="header container">
+    <header class="header">
         <div class="header__logo">
             <a href="/" class="header__logo-link">Projeto</a>
         </div>
@@ -40,24 +40,26 @@
 
     <main class="main container">
         <section class="pagina__jogo">
-            <h1 class="nome__jogo">Forca</h1>
-            <canvas id="indefinido"></canvas>
+            <h1 class="nome__jogo">Jogo da cobrinha</h1>
+
+            <canvas class="canvas" id="gameCanvas"></canvas>
 
             <div class="como__jogar">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam neque aliquam commodi autem recusandae labore ut animi ea deleniti quas.</p>
             </div>
 
+
             <div class="info__jogo">
                 <div class="descricao__jogo">
-                    <h3>Descrição</h3>
+                    <h3 class="titulo__descricao">Descrição</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel sint odit praesentium accusantium ab similique! Iusto molestiae debitis distinctio soluta dolor error vel exercitationem. Voluptates nulla necessitatibus nesciunt culpa laborum.</p>
                 </div>
 
-                <div class="para__que">
-                    <h3>Para que</h3>
-                    <ul>
-                        <li>aewaew</li>
-                        <li>aewaew</li>
+                <div class="objetivos">
+                    <h3 class="titulo__lista">Objetivos</h3>
+                    <ul class="lista_objetivos">
+                        <li>Melhorar a Coordenação</li>
+                        <li>Atenção</li>
                         <li>aewaew</li>
                         <li>aewaew</li>
                     </ul>
@@ -68,7 +70,7 @@
 
 
     <!-- Rodapé -->
-    <footer class="footer container">
+    <footer class="footer">
         <p>&copy Todos os direitos reservados</p>
     </footer> 
     
