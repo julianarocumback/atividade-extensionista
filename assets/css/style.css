@@ -535,9 +535,54 @@ li {
         padding: 1.5rem;
     }
 
+    .header__nav{
+        position: static;
+        width: auto;
+
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+    
+    .header__nav-button--open,
+    .header__nav-button--close {
+        display: none;
+    }
+    
+    .header__nav-list {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 20px;
+        visibility: visible;
+    }
+    
+    .header__nav-divisor {
+        position: relative;
+        border-color: rgba(0, 0, 0, 0.315);
+        width: 0px;
+        top: 0px;
+    }
+     
+    .header__nav-button--close {
+        display: none;
+    }
+    
+    .show-menu {
+        display: none;
+    }
+
+
     .main {
         margin: 0rem 2rem 0rem 2rem;
+        padding: 0rem 1.5rem 0rem 1.5rem;
     }
+
+
+
+
+
+
     /* PRINCIPAL */
     /*----- banner -----*/
     .main__banner {
@@ -555,11 +600,13 @@ li {
     .main__pesquisa {
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom: 1.5rem;
     }
 
     .area__pesquisa {
         width: 50%;
-    }
+        }
+
     .pesquisa {
         display: flex;
         position: relative;
@@ -576,16 +623,13 @@ li {
 
     /* ----- jogos ----- */
     .main__games {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        position: relative;
-        margin: 1rem 0rem 1rem 0rem;
+
+        margin: 1.5rem 0rem 1.5rem 0rem;
     }
 
     .main__games-game {
         width: calc(100% / 3 - 0.75rem);
-        max-height: 155px;
+        max-height: 175px;
     }
 
 
@@ -666,42 +710,7 @@ li {
     }
     
 
-    .header__nav{
-        position: static;
-        width: auto;
 
-        display: flex;
-        align-items: center;
-        padding: 0;
-    }
-    
-    .header__nav-button--open,
-    .header__nav-button--close {
-        display: none;
-    }
-    
-    .header__nav-list {
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        gap: 20px;
-        visibility: visible;
-    }
-    
-    .header__nav-divisor {
-        position: relative;
-        border-color: rgba(0, 0, 0, 0.315);
-        width: 0px;
-        top: 0px;
-    }
-     
-    .header__nav-button--close {
-        display: none;
-    }
-    
-    .show-menu {
-        display: none;
-    }
 
     /*-=-=-=-=-= PRINCIPAL =-=-=-=-=-*/
 
