@@ -342,7 +342,8 @@ li {
 
 /*----- ivy -----*/
 .img1 {
-    /*  */
+    /* top: -70px; */
+    position: relative;
 }
 
 /*----- juliana -----*/
@@ -667,6 +668,8 @@ li {
     .quem-somos__perfil-info {
         width: 70%;
         overflow: hidden;
+        padding-top: 1rem;
+        
     }
 
     .img2{    
@@ -763,9 +766,11 @@ li {
 
     .img2{    
         top: -50px;
-        width: 100%;
+ 
         position: relative;
     }
+
+  
 
     /*-=-=-=-= PÁGINA DO JOGO =-=-=-=-*/
     .canvas {
