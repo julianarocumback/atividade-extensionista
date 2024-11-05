@@ -323,6 +323,8 @@ li {
     margin-bottom: 1.5rem;
     overflow: hidden;
     border-radius: 1.5rem;
+
+    
 }
 
 .quem-somos__perfil-foto {
@@ -330,6 +332,8 @@ li {
     height: 500px;
     overflow: hidden;
     background-color: rgb(255, 242, 237);
+
+
 }
 
 .quem-somos__perfil-img {
@@ -343,25 +347,25 @@ li {
 
 /*----- juliana -----*/
 
-.img2 {    
+.img2 {
     top: -70px;
     position: relative;
 }
 
 /*----- vittoria -----*/
 .img3 {
-    /*  */
+    top: -30px;
+    position: relative;
 }
 
 .quem-somos__perfil-info {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0.5rem 1rem 1rem 1rem;
     background-color: rgb(228, 228, 228);
 }
 
 .quem-somos__perfil-membro{
     display: flex;
-    padding-top: 0.5rem;
+ 
     justify-content: space-between;
     align-items: center;
 }
@@ -379,8 +383,7 @@ li {
 }
 
 .quem-somos__perfil-descricao {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.3rem;
 }
 
 /*-=-=-=-= PÁGINA DO JOGO =-=-=-=-*/
@@ -708,8 +711,9 @@ li {
 
     /*======= BASE =======*/
     .main {
-        margin: 0rem 3rem 0rem 3rem;
-        padding: 0rem 2rem 0rem 2rem;
+        max-width: 1080px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
 
@@ -717,7 +721,9 @@ li {
 
     /*----- pesquisa -----*/
     .main__pesquisa {
-        margin: 5rem 0rem 2rem 0rem;
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .area__pesquisa {
@@ -781,53 +787,3 @@ li {
 
 
 
-/*========== DESKTOP / GRANDE ==========*/
-@media (min-width: 1280px) {
-    /*========== BASE ==========*/
-    .main {
-        max-width: 1280px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    /*-=-=-=-= PRINCIPAL =-=-=-=-*/
-
-    /*----- jogos -----*/
-
-    .main__games-game {
-        width: calc(100% / 3 - 1.34rem);
-        max-height: 240px;
-    }
-
-
-    /*-=-=-=-= SOBRE O PROJETO =-=-=-=-*/
-    .sobre {
-        margin: 10rem 0rem 5rem 0rem;     
-    }
-
-    /*-=-=-=-= QUEM SOMOS =-=-=-=-*/
-    .quem-somos {
-        margin: 10rem 0rem 5rem 0rem;
-    }
-
-    .ods-img {
-        width: calc((100% / 7) - 0.43rem);
-    }
-
-    /*-=-=-=-= JOGO =-=-=-=-*/
-    .pagina__jogo {
-        margin: 10rem 0rem 5rem 0rem;
-    }
-
-    .canvas {
-        height: 600px;
-    }
-
-    .descricao__jogo {
-        /* width: 70%; */
-        border: 1px solid #e4e4e4;
-        padding: 1rem;
-        border-radius: 1rem;
-        width: 70%;
-    }
-}
