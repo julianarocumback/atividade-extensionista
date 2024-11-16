@@ -4,7 +4,8 @@
 :root {
 
     /* Cores */
-    --cor-primaria: rgb(250, 84, 87);
+    --cor-primaria: #1CA2E5
+    ;
     /* --cor-titulo: ; */
     /* --cor-texto: ; */
     /* --cor-background: ; */
@@ -50,7 +51,7 @@ body {
 
 
 h1, h2, h3, h4, h5, h6 {
-    color: brown;
+    color: var(--cor-primaria);
 }
 
 .titulo {
@@ -59,9 +60,20 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     text-decoration: none;
+    color: #dce6f8;
 }
 
-li {
+a:hover{
+    color: white;
+}
+
+a:active {
+    color: white;
+}
+
+
+
+li{
     list-style: none;
 }
 
@@ -80,6 +92,7 @@ li {
     align-items: center;
 
     background-color: var(--cor-primaria);
+    box-shadow: 0px 0px 7px 0px rgb(0, 0, 0);
 }
 
 .header__nav{
@@ -94,6 +107,7 @@ li {
     visibility: hidden;
     
     background-color: var(--cor-primaria);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.589);
 }
 
 .header__nav-button--open,
@@ -101,6 +115,7 @@ li {
     font-size: 1.5rem;
     cursor: pointer;
     right: 0;
+    color: white;
 }
 
 .header__nav-list {
@@ -112,10 +127,10 @@ li {
 
 .header__nav-divisor {
     position: absolute;
-    border-color: rgba(0, 0, 0, 0.315);
+    border-color: rgba(0, 0, 0, 0.082);
     width: 100%;
     left: 0px;
-    top: 185px;
+    top: 190px;
 }
 
 .header__nav-button--close {
@@ -147,6 +162,7 @@ li {
     background-color: var(--cor-primaria);
     text-align: center;
     align-content: center;
+    color: #dce6f8;
 }
 
 
@@ -155,6 +171,7 @@ li {
 
 /*----- banner -----*/
 .banner {
+    position: relative;
     width: 100%;
     height: 200px;
     overflow: hidden;
@@ -190,26 +207,38 @@ li {
     height: 2rem;
     width: 100%;
     border-radius: 10px;
-    background-color: aliceblue;
+    background-color: #f0f8ff;
     padding-left: 1.7rem;
+    border: 2px solid #5B88B5;
 }
 
-.botao-pesquisa { /* botão de lupa */
+.caixa__pesquisa:active { /* caixa de pesquisa */
+    box-shadow: 0px 1px 5px 0px black;
+}
+
+
+.icone-pesquisa { /* botão de lupa */
     position: absolute;
     padding-top: 0.3rem;
     padding-left: 0.5rem;
+    color: #5B88B5;
 }
 
 .filtro { /* filtro */
     height: 2rem;
     width: 2rem;
-    background-color: rgb(167, 163, 172);
+    background-color: #f0f8ff;
     border-radius: 6px;
-    border: 1px solid red;
+    border: 2px solid #5B88B5;
     align-content: center;
     text-align: center;
     cursor: pointer;
 }
+
+.icone-filtro { /* botão de lupa */
+    color: #5B88B5;
+}
+
 
 .categoria { /* categoria escondida  */
     display: none;
@@ -219,6 +248,23 @@ li {
     display: block;
 }
 
+.botao-categoria {
+    background-color: #f0f8ff;
+    border: 2px solid #5B88B5;
+    padding: 0px 10px 0px 10px;
+    border-radius: 10px;
+    color: #5B88B5;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.botao-categoria:active {
+    background-color: #5B88B5;
+    border: 2px solid #5B88B5;
+    padding: 0px 10px 0px 10px;
+    border-radius: 10px;
+    color: #f0f8ff;
+}
 
 .main__divider {
     border-color: rgba(0, 0, 0, 0.1);
@@ -241,6 +287,7 @@ li {
     overflow: hidden;
     box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
     position: relative;
+    font-size: 0.9rem;
 }
 
 
@@ -323,6 +370,8 @@ li {
     margin-bottom: 1.5rem;
     overflow: hidden;
     border-radius: 1.5rem;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 10px 0px rgba(97, 97, 97, 0.247);
 
     
 }
@@ -361,7 +410,9 @@ li {
 
 .quem-somos__perfil-info {
     padding: 0.5rem 1rem 1rem 1rem;
-    background-color: rgb(228, 228, 228);
+    background-color: #f0f8ff;
+
+    /* border: 2px solid #5B88B5; */
 }
 
 .quem-somos__perfil-membro{
@@ -381,6 +432,11 @@ li {
     font-size: 1rem;
     gap: 0.5rem;
     text-align: center;
+   
+}
+
+.icone-perfil {
+    color: var(--cor-primaria);
 }
 
 .quem-somos__perfil-descricao {
@@ -454,14 +510,12 @@ li {
     /*-=-=-=-= PRINCIPAL =-=-=-=-*/
 
     /*----- banner -----*/
-    .main__banner {
-        width: 100%;
+    .banner {
         height: 220px;
     }
 
-    .main__banner-img {
-        width: 100%;
-        top: -20px;
+    .banner__img {
+        top: -40px;
     }
 
     /*----- pesquisa -----*/
@@ -505,15 +559,14 @@ li {
     /*-=-=-=-= PRINCIPAL =-=-=-=-*/
 
     /*----- banner -----*/
-    .main__banner {
-        width: 100%;
+    .banner {
         height: 250px;
     }
 
-    .main__banner-img {
-        width: 100%;
-        top: -20px;
+    .banner__img {
+        top: -60px;
     }
+
 
     /*-=-=-=-= QUEM SOMOS =-=-=-=-*/
     .quem-somos__perfil-foto {
@@ -586,16 +639,14 @@ li {
     /*-=-=-=-= PRINCIPAL =-=-=-=-*/
 
     /*----- banner -----*/
-    .main__banner {
-        width: 100%;
+    .banner {
         height: 350px;
     }
 
-    .main__banner-img {
-        width: 100%;
-        position: relative;
+    .banner__img {
         top: -100px;
     }
+
 
     /*----- pesquisa -----*/
     .main__pesquisa {
@@ -605,7 +656,7 @@ li {
     }
 
     .area__pesquisa {
-        width: 50%;
+        width: 55%;
     }
 
     .pesquisa {
@@ -631,6 +682,7 @@ li {
     .main__games-game {
         width: calc(100% / 3 - 0.75rem);
         max-height: 175px;
+        font-size: 1.1rem;
     }
 
     /*-=-=-=-= SOBRE O PROJETO =-=-=-=-*/
@@ -722,6 +774,16 @@ li {
 
     /*-=-=-=-= PRINCIPAL =-=-=-=-*/
 
+    /*----- banner -----*/
+    .banner {
+        height: 400px;
+    }
+
+    .banner__img {
+        top: -300px;
+    }
+
+
     /*----- pesquisa -----*/
     .main__pesquisa {
         max-width: 1280px;
@@ -729,9 +791,6 @@ li {
         margin-right: auto;
     }
 
-    .area__pesquisa {
-        width: 70%;
-    }
 
     .categoria {
         gap: 0.7rem;
