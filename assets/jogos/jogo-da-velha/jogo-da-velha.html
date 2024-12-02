@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Jogos educativos para crianças">
-    <title>Jogo da cobrinha</title>
+    <title>Jogo da Velha</title>
     
     <!-- Conteúdo externo -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="jogo-da-velha.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
 <body>
@@ -40,21 +41,41 @@
 
     <main class="main">
         <section class="pagina__jogo">
-            <h1 class="nome__jogo titulo">Jogo da cobrinha</h1>
+            <!-- título -->
+            <h1 class="nome__jogo titulo">Jogo da Velha</h1>
 
-            <div class="game-board" id="#"></div>
-
-            <div class="como__jogar">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam neque aliquam commodi autem recusandae labore ut animi ea deleniti quas.</p>
+            <!-- jogo -->
+            <div class="area-jogo">
+                <div class="game-board" id="gameBoard">
+                    <div id="status">Jogador X, é a sua vez!</div>
+                    <div id="scoreboard">
+                        <p>Jogador X: <span id="scoreX">0</span></p>
+                        <p>Jogador O: <span id="scoreO">0</span></p>
+                    </div>
+                    <div id="board" class="board">
+                        <!-- Cada célula será um botão -->
+                        <button class="cell" data-index="0"></button>
+                        <button class="cell" data-index="1"></button>
+                        <button class="cell" data-index="2"></button>
+                        <button class="cell" data-index="3"></button>
+                        <button class="cell" data-index="4"></button>
+                        <button class="cell" data-index="5"></button>
+                        <button class="cell" data-index="6"></button>
+                        <button class="cell" data-index="7"></button>
+                        <button class="cell" data-index="8"></button>
+                    </div>
+                    <button id="restartBtn" class="hidden">Jogar Novamente</button>
+                </div>
             </div>
 
-
+            <!-- informações do jogo -->
             <div class="info__jogo">
                 <div class="descricao__jogo">
                     <h3 class="titulo__descricao">Descrição</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel sint odit praesentium accusantium ab similique! Iusto molestiae debitis distinctio soluta dolor error vel exercitationem. Voluptates nulla necessitatibus nesciunt culpa laborum.</p>
                 </div>
 
+                <!-- objetivos do jogo -->
                 <div class="objetivos">
                     <h3 class="titulo__lista">Objetivos</h3>
                     <ul class="lista_objetivos">
