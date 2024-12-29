@@ -221,6 +221,14 @@ li{
     cursor: pointer;
 }
 
+.filtrar {
+    display: flex;
+}
+
+.esconder {
+    display: none;
+}
+
 .icone-filtro {
     color: #5B88B5;
 }
