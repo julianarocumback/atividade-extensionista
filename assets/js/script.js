@@ -1,11 +1,9 @@
-// MOSTRAR MENU
-
+// MENU
 const headerNav = document.getElementById('header-nav'),
       navOpen = document.getElementById('nav-open'),
       navClose = document.getElementById('nav-close')
 
 //  Abrir menu
-
 if(navOpen){
     navOpen.addEventListener('click', () => {
         headerNav.classList.add('show-menu')
@@ -13,39 +11,35 @@ if(navOpen){
 }
 
 // Fechar menu
-
 if(navClose){
     navClose.addEventListener('click', () => {
         headerNav.classList.remove('show-menu')
     })
 }
 
+// PESQUISA
 
 
-// BANNER
+
+
+
+
+
 
 
 
 
 // FILTRO
-
 const filtro = document.getElementById('filtro'),
       categoria = document.getElementById('categoria')
       
 
-// Abrir categoria
-
+// Abrir / fechar categoria
 if(filtro){
     filtro.addEventListener('click', () => {
-        categoria.classList.add('mostrar-categoria') 
+        categoria.classList.toggle('mostrar-categoria') 
     })
 }
 
-// Fechar categoria
 
-// if(filtro){
-//     filtro.addEventListener('click', () => {
-//         categoria.classList.remove('mostrar-categoria')
-//     })
-// }
 
