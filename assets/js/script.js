@@ -42,6 +42,10 @@ const pesquisar = () => {
         }else{
             jogo.parentElement.classList.remove('esconder')
         }
+        if(pes == ''){
+            jogo.parentElement.classList.remove('esconder')
+
+        }
     })
 }
 
