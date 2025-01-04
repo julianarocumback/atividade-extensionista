@@ -23,29 +23,27 @@ const nomeGame = [...document.querySelectorAll('.main__games-name')]
 const pesquisa = document.getElementById('caixa-pesquisa')
 const icone_pesquisa = document.getElementById('icone-pesquisa')
 
+pesquisa.addEventListener('keyup', ()=>{
+    if (event.key === 'Enter'){
+        pesquisar()
+    }
+})
+
 icone_pesquisa.addEventListener('click', ()=>{
+    pesquisar()
+})
+
+const pesquisar = () => {
     let pes = pesquisa.value.toLowerCase()
     nomeGame.map((jogo)=>{
         let texto = jogo.textContent.toLowerCase()    
-        if(pes == ''){
-            jogo.parentElement.classList.remove('esconder')
-        }
-        else if(texto !== pes){
+        if(texto !== pes){
             jogo.parentElement.classList.add('esconder')
         }else{
             jogo.parentElement.classList.remove('esconder')
         }
-        
     })
-
-})
-
-
-
-
-
-
-
+}
 
 // FILTRO
 const filtro = document.getElementById('filtro'),
