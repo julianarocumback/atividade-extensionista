@@ -19,26 +19,26 @@ if(navClose){
 
 // PESQUISA
 const games = [...document.querySelectorAll('.game')]
-
+const nomeGame = [...document.querySelectorAll('.main__games-name')]
 const pesquisa = document.getElementById('caixa-pesquisa')
-const teste = pesquisa.value
-console.log(teste)
+const icone_pesquisa = document.getElementById('icone-pesquisa')
 
+icone_pesquisa.addEventListener('click', ()=>{
+    let pes = pesquisa.value.toLowerCase()
+    nomeGame.map((jogo)=>{
+        let texto = jogo.textContent.toLowerCase()    
+        if(pes == ''){
+            jogo.parentElement.classList.remove('esconder')
+        }
+        else if(texto !== pes){
+            jogo.parentElement.classList.add('esconder')
+        }else{
+            jogo.parentElement.classList.remove('esconder')
+        }
+        
+    })
 
-// const p = pesquisa.value
-
-// games.map((a)=>{
-//     const teste  = a.innerText
-//     console.log(teste)
-// })
-
-// if(p == teste){
-//     console.log('ewea')
-// }
-
-// console.log(pesquisa)
-
-
+})
 
 
 

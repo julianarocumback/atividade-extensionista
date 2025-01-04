@@ -194,7 +194,7 @@ li{
     width: 100%;
     border-radius: 10px;
     background-color: #f0f8ff;
-    padding-left: 1.7rem;
+    padding-left: 0.5rem;
     border: 2px solid #5B88B5;
 }
 
@@ -202,12 +202,13 @@ li{
     box-shadow: 0px 1px 5px 0px black;
 }
 
-
 .icone-pesquisa {
     position: absolute;
     padding-top: 0.3rem;
-    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    right: 0;
     color: #5B88B5;
+    cursor: pointer;
 }
 
 .filtro {
