@@ -112,14 +112,6 @@ li{
     row-gap: 20px;
 }
 
-.header__nav-divisor {
-    position: absolute;
-    border-color: rgba(0, 0, 0, 0.082);
-    width: 100%;
-    left: 0px;
-    top: 190px;
-}
-
 .header__nav-button--close {
     position: absolute;
     top: 11px;
@@ -211,6 +203,8 @@ li{
     cursor: pointer;
 }
 
+
+
 .filtro {
     height: 2rem;
     width: 2rem;
@@ -239,6 +233,11 @@ li{
     display: none;
 }
 
+.categoria-divisor {
+    border-color: #00000015;
+    display: inline;
+}
+
 .mostrar-categoria {
     display: block;
 }
@@ -251,6 +250,7 @@ li{
     color: #5B88B5;
     font-weight: 500;
     cursor: pointer;
+    margin-left: 5px;
 }
 
 .botao-categoria:active {
@@ -647,6 +647,7 @@ li{
 
     .botao-categoria {
         border-radius: 10px;
+        margin-left: 0px;
     }
     
 
