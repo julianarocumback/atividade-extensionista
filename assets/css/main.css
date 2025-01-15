@@ -159,7 +159,7 @@ li{
 .banner__img {
     width: 100%;
     position: absolute;
-    top: 20px;
+    bottom: 0px;
 }
 
 /*----- pesquisa -----*/
@@ -489,7 +489,7 @@ li{
     }
 
     .banner__img {
-        top: 0px;
+        top: -40px;
     }
 
     /*----- pesquisa -----*/
@@ -536,7 +536,7 @@ li{
     }
 
     .banner__img {
-        top: -60px;
+        top: -75px;
     }
 
 
@@ -616,7 +616,7 @@ li{
     }
 
     .banner__img {
-        top: 0px;
+        top: -110px;
     }
 
 
@@ -756,7 +756,7 @@ li{
     }
 
     .banner__img {
-        top: -270px;
+        top: -350px;
     }
 
 
